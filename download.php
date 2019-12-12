@@ -1,10 +1,6 @@
 <?php
 include 'func.php';
 
-$clean = fopen('error_log', 'w');
-fwrite($clean,'');
-fclose($clean);
-
 $url = isset($_GET['gd']) ? $_GET['gd']: null;
 $id = $_GET['gd'];
  
