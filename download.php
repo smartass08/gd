@@ -39,7 +39,7 @@ $id = $_GET['gd'];
 }
 $docsurl = udud($id);
 
-if(empty($id){
+if(empty($_GET['gd']){
 echo '<!DOCTYPE html>
 <html style="height:100%">
 <head>
