@@ -7,7 +7,7 @@ fwrite($clean,'');
 fclose($clean);
 
 $gdid = hex2bin($_GET['gd']);
-$id = hex2bin($_GET['gd']);
+$id = $_GET['gd'];
  
  function udud($id){
 		$ch = curl_init("https://drive.google.com/uc?id=$id&authuser=0&export=download");
