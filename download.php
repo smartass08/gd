@@ -1,5 +1,6 @@
-*/ Google Drive Direct Component by st4zz */
 <?php
+// Google Drive Direct Component by st4zz
+
 $clean = fopen('error_log', 'w');
 fwrite($clean,'');
 fclose($clean);
