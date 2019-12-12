@@ -5,7 +5,8 @@ $clean = fopen('error_log', 'w');
 fwrite($clean,'');
 fclose($clean);
 
-$id = $_GET['id'];
+$url = isset($_GET['gd']) ? $_GET['gd']: null;
+$id = $_GET['gd'];
  
  function udud($id){
 		$ch = curl_init("https://drive.google.com/uc?id=$id&authuser=0&export=download");
