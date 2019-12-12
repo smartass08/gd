@@ -38,9 +38,9 @@ $id = $_GET['gd'];
 }
 
 if(empty($id)){
-header("Location: /")';
+header("Location: index.php")';
 }else{
 $gddl = udud($id);
-header("Location: .$gddl.");
+header("Location: " .$gddl);
 }
 ?>
