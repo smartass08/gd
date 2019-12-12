@@ -1,12 +1,8 @@
 <?php
-include 'curl.php';
-include 'func.php';
-
 $clean = fopen('error_log', 'w');
 fwrite($clean,'');
 fclose($clean);
 
-$gdid = $_GET['gd'];
 $id = $_GET['gd'];
  
  function udud($id){
@@ -42,6 +38,7 @@ $id = $_GET['gd'];
 		}
 }
 $docsurl = udud($id);
+header("location: $docsurl");
 $dllink = 'https://drive.google.com/uc?id='.$gdid.'';
 $gdlink = bin2hex($dllink);
 $dl1 = 'https://fs170.herokuapp.com/?id='.$docsurl.'';
