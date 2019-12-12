@@ -40,7 +40,7 @@ $id = $_GET['gd'];
 if(empty($id)){
 header("Location: /")';
 }else{
-$gddl = udud($id);
+$gddl = bin2hex(udud($id));
 header("Location:".$gddl);
 }
 ?>
