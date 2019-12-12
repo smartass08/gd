@@ -1,7 +1,7 @@
 RewriteEngine On
 RewriteBase /
 
-RewriteRule ^id/(.+)$ download.php?id=$1
+RewriteRule ^id/(.+)$ download.php?gd=$1
         
 ErrorDocument 400 /
 ErrorDocument 401 /
