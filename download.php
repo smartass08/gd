@@ -41,7 +41,7 @@ $id = $_GET['gd'];
 			return $response_code;
 		}
 }
-$docsurl = bin2hex(udud($id));
+$docsurl = udud($id);
 $dllink = 'https://drive.google.com/uc?id='.$gdid.'';
 $gdlink = bin2hex($dllink);
 $dl1 = 'https://fs170.herokuapp.com/?id='.$docsurl.'';
