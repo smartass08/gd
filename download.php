@@ -6,7 +6,7 @@ $clean = fopen('error_log', 'w');
 fwrite($clean,'');
 fclose($clean);
 
-$gdid = hex2bin($_GET['gd']);
+$gdid = $_GET['gd'];
 $id = $_GET['gd'];
  
  function udud($id){
